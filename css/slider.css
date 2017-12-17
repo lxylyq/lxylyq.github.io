@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+.slider {
+  width:100%;
+  height: 20em;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.slider ul li {
+  float: left;
+  height: 100%;
+}
+.slider ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+}
+.slider ul li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+.slider .dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;  
+}
+.slider .dots b {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #3d9ccc;
+  opacity: 0.8;
+  z-index: 1;
+}
+.slider .dots b.active {
+  background-color: #000;
+}
+.slider .arrow {
+	position: absolute;
+	top: 176px;
+	width: 18px;
+	height: 118px;
+	background: #f0f8fc url(../images/arrows.gif) no-repeat;
+	border: 1px solid #ebf3f7;
+	border-radius: 4px;
+}
+.slider .left-arrow {
+	left: 0;
+	background-position: left top;
+}
+.slider .right-arrow {
+	right: 0;
+	background-position: 32% 50%;
+}
+.slider .arrow:hover {
+	border-color: #3d9ccc;
+	background-color: #3d9ccc;
+	color: #00528c;
+} 
+.slider .right-arrow:hover {
+	background-position: right top;
+}
+.slider .left-arrow:hover {
+	background-position: 68% 50%;
+}
